@@ -15,7 +15,7 @@ class Battlefield:
         print("Or will the power of his foes be too much!\n Let the battle...BEGIN!!!")
         print("")
 
-    def attack(self):
+    def battle(self):
         pass
 
     def winner(self):

@@ -1,4 +1,4 @@
-import random
+
 from Weapon import Weapon
 
 class Enemies(Weapon):
