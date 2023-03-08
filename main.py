@@ -3,15 +3,14 @@
 # battlefield_one = Battlefield()
 # battlefield_one.run_game()
 
-from Weapon import Weapon
-weapon_one= Weapon()
-weapon_one.attack_name
-print(weapon_one.attack_name)
-attack = input("What will Hercules attack weapon be?\n")
 
 
 
-
+# from Weapon import Weapon
+# weapon_one= Weapon()
+# weapon_one.attack_name
+# print(weapon_one.attack_name)
+# attack = input("What will Hercules attack weapon be?\n")
 
 # weapon_info = {
 #             'weapon_name': ['sword slice', 'martial arts move', 'megapunch', 'megakick'],

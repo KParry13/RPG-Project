@@ -6,11 +6,24 @@ class Hercules:
         super().__init__()
 
     def weapon_choice(self):
-        print(Weapon.attack_name)
-        attack = input("What will Hercules attack weapon be?")
-        print(attack)
+        weapon = Weapon()
+        print(weapon.attack_name)
+        print("")
+        attack = input("What will Hercules attack weapon be?\n").lower
+        print("")
 
-    weapon_choice()
+        if attack == 'sword slice':
+            print("Hercules chose sword slice!!")
+        elif attack == 'martial arts move':
+            print("Hercules chose martial arts move!!")
+        elif attack == 'megapunch':
+            print("Hercules chose megapunch!!")
+        elif attack == 'megakick':
+            print("Hercules chose megakick!!")
+        else:
+            print("Choose valid weapon")
+
+    # weapon_choice(weapon_choice)
 
     def attack(self,enemies):
         pass
