@@ -9,7 +9,7 @@ class Hercules:
         weapon = Weapon()
         print(weapon.attack_name)
         print("")
-        attack = input("What will Hercules attack weapon be?\n").lower
+        attack = input("What will Hercules attack weapon be?\n").lower()
         print("")
 
         if attack == 'sword slice':
