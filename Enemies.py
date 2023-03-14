@@ -10,10 +10,10 @@ class Enemies(Weapon):
     def attack(self, hercules):
         weapon = Weapon()
         random.choice(weapon.attack_name)
-        hercules.health -= .attack_power
+        hercules.health -= Weapon.attack_power
         name = random.choice(self.name)
         print(f"{name} uses their {weapon} and does damage of {Weapon.attack_power}!")
-        print(f"Hercules health is down to {hercules.health}!")
+        print(f"Hercules is down to {hercules.health} health!")
 
     
     

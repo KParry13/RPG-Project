@@ -26,4 +26,8 @@ class Hercules:
     # weapon_choice(weapon_choice)
 
     def attack(self,enemies):
-        pass
+        attack_weapon = Weapon.attack_name
+        weapon = Weapon(attack_weapon)
+        enemies.health -= Weapon.attack_power
+        print(f"Hercules uses his {weapon} and does damage of {Weapon.attack_power}!")
+        print(f"Enemies is down to {enemies.health} health!")

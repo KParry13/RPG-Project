@@ -8,6 +8,8 @@ class Battlefield:
 
     def run_game(self):
         self.welcome()
+        self.battle()
+        self.winner()
 
     def welcome(self):
         print("Welcome to the battle of the Otherworld!\n Hercules is said to be undefeatable so we are going to put him to the test!")
@@ -16,7 +18,20 @@ class Battlefield:
         print("")
 
     def battle(self):
-        pass
+        while self.hercules.health > 0 and self.enemies.health > 0:
+            self.hercules.attack(self.enemies)
+            self.enemies.attack(self.hercules)
+            print("")
+            if self.hercules.health >= self.enemies.health:
+                print('Take that you crazy bat!')
+                print("")
+            else:
+                print('What a hit!')
+                print("")
+
 
     def winner(self):
-        pass
+        if self.hercules.health > self.enemies.health:
+            print("Hercules is still undefeated!")
+        else:
+            print("The Enemies with gathered force defeated the almighty Hercules!")
